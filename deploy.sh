@@ -1,6 +1,6 @@
 docker build -t dalmer/multi-client:latest -t dalmer/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t dalmer/multi-server:latest -t dalmer/multi-server:$SHA -f ./server/Dockerfile ./server
-docker build -t dalmer/multi-worker:latest -t dalmer/multi-work:$SHA -f ./worker/Dockerfile ./worker
+docker build -t dalmer/multi-worker:latest -t dalmer/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push dalmer/multi-client:latest 
 docker push dalmer/multi-server:latest 
