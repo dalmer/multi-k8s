@@ -18,7 +18,7 @@ before_install:
   - docker build -t dalmer/react-test -f ./client/Dockerfile.dev ./client
 
 script:
-  - docker run -e CI=true dalmer/react-react npm run test
+  - docker run -e CI=true dalmer/react-test npm run test
 
 deploy:
   provider: script
